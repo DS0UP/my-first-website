@@ -1,0 +1,177 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+  
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* background-size: cover 와 비슷함. (HTML 요소 or 비디오와 작동)*/
+    
+}
+
+.default {
+    margin-top: 10vh;
+}
+
+.section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 6vw;
+}
+
+#section1 p {
+    color: black;
+    font-size: 10vw;
+}
+
+#section1 p i:hover {
+    color: gold;
+}
+
+#section2 { color: white; }
+
+#section3 { color: white; }
+
+#section4 {
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+#section4 p { text-align: left; }
+
+#section5 { color: white; }
+
+img {
+    padding: 20px;
+    height: 210px;
+}
+
+#img_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iimmgg {
+    margin: 10px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.iimmgg:hover{
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+.ani-04 { text-align: right; }
+
+/* 애니메이션 */
+.section.active .ani-01 {animation: fadeLeft 0.5s 0.35s both;}
+.section.active .ani-02 {animation: fadeLeft 0.5s 0.55s both;}
+.section.active .ani-03 {animation: fadeLeft 0.5s 0.75s both;}
+.section.active .ani-04 {animation: fadeRight 0.5s 0.95s both;}
+.section.active .ani-fadeUp i {animation: fadeUp 0.4s 0.2s both;}
+.section.active .ani-fadeUp-slow {animation: fadeUp 1s 0.5s both;}
+.section.active .ani-fadeIn {animation: fadeIn 1s 1.2s both;}
+
+@keyframes fadeIn {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;}
+}
+@keyframes fadeUp {
+	0%{transform:translateY(80px); opacity: 0;}
+	100%{transform:translateY(0); opacity: 1;}
+}
+@keyframes fadeLeft {
+	0%{transform:translateX(-80px); opacity: 0;}
+	100%{transform:translateX(0); opacity: 1;}
+}
+@keyframes fadeRight {
+	0%{transform:translateX(80px); opacity: 0;}
+	100%{transform:translateX(0); opacity: 1;}
+}
+
+ul, li {list-style: none;}
+
+.flow_banner {
+    overflow: hidden;
+    display: flex;/*max-width: 1180px*/;
+    margin: 3vh auto;
+    background: #000;
+}
+
+.flow_banner .list {display: flex;}
+
+.flow_banner .list > li {
+    white-space: nowrap;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+}
+
+@keyframes flowRolling1 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+@keyframes flowRolling2 {
+    100% {transform: translateX(0);}
+    0% {transform: translateX(-100%);}
+}
+
+@keyframes flowRolling3 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+
+#wow {
+    display:table;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+}
+
+#wow div {
+    text-align:center;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+span.b {
+    color: black;
+    background-color: white;
+    padding-right: 0.2em;
+}
+
+.highlighter {
+    background: linear-gradient(white 0 100%);
+    background-position: 0 calc(100% - 2px);
+    background-size: 0 10px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+}
+
+.highlighter:hover {
+    background-size:100% 10px;
+    cursor: pointer;
+}
+
+.section.active .ani-LR {animation: LR 1s 5s both;}
+
+@keyframes LR {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

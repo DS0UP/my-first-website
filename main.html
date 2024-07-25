@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./nav.css">
+        <link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
+        <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <meta charset="UTF-8">
+        <title>main</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">로고입니다!</div>
+            <ul class="navigation" id="nav">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
+                <li data-menuanchor="thirdPage"><a href="#thirdPage">SKILLS</a></li>
+                <li data-menuanchor="fourthPage"><a href="#fourthPage">MODELING</a></li>
+                <li data-menuanchor="lastPage"><a href="#lastPage">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars on" id="on"></i>
+            </div>
+            <div class="alert">
+                <ul class="navigation1" id="nav1">
+                    <i class="bx bxs-x-circle close"></i>
+                    <li data-menuanchor="firstPage"><a href="#firstPage" class="out">HOME</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage" class="out">ABOUT</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage" class="out">SKILLS</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage" class="out">MODELING</a></li>
+                    <li data-menuanchor="lastPage"><a href="#lastPage" class="out">CONTACT</a></li>
+                </ul>
+                </i>
+            </div>
+        </header>
+
+        <div id="fullpage">
+            <div class="section" id="section1">
+                <div class="default">
+                    <div class="bg-video">
+                        <video class="bg-video__content" autoplay muted loop data-keepplaying>
+                          <source src="./vid/시퀀스 01.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                    <p class="ani-fadeUp">포트폴리오 웹사이트</p>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="default">
+                    <p class="ani-01">다양한 분야에서</p>
+                    <p class="ani-02">빛나는 재능과 빠른 습득력으로</p>
+                    <p class="ani-03">새로운 기술을 탐구하는 <span class="b ani-fadeIn">개발자</span></p>
+                    <p class="ani-04">정용국</p>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="default">
+                    <p>Skills</p>
+                    <div id="img_container">
+                        <img class="iimmgg" src="./pic/Blender.png" alt="BLENDER">
+                        <img class="iimmgg" src="./pic/PS.png" alt="PHOTOSHOP">
+                        <img class="iimmgg" src="./pic/davinci.png" alt="DAVINCI RESOLVE">
+                        <img class="iimmgg" src="./pic/java.png" alt="JAVA">
+                        <img class="iimmgg" src="./pic/html5.png" alt="HTML5">
+                        <img class="iimmgg" src="./pic/CSS.png" alt="CSS3">
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="default">
+                    <div class="flow_banner flow_banner1">
+                        <ul class="list" id="imageList1">
+                        </ul>
+                    </div>
+                    <div class="flow_banner flow_banner2">
+                        <ul class="list" id="imageList2">
+                        </ul>
+                    </div>
+                    <div class="flow_banner flow_banner3">
+                        <ul class="list" id="imageList3">
+                        </ul>
+                    </div>
+                </div>
+                <div class="ani-fadeUp-slow" id="wow">
+                    <div>
+                        <h1>Blender</h1>
+                        3차원 컴퓨터 그래픽 제작 소프트웨어
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section5">
+                <p class="ani-fadeUp-slow">연락하세요</p>
+                <p class="ani-03"><span class="highlighter copy-text">010-4054-5070</span></p>
+                <p class="ani-03"><span class="highlighter copy-text">dra9ons0up@gmail.com</span></p>
+            </div>
+            <div class="section fp-auto-height">
+                <p id="time"></p>
+            </div>
+            <div class="section fp-auto-height">
+                <img class="ani-LR" src="./pic/Rick Roll.png" alt="">
+            </div>
+        </div>
+        <script type="text/javascript" src="./main.js"></script>
+        <script type="text/javascript" src="./nav.js"></script>
+        <script type="text/javascript" src="./jquery.fullPage.js"></script>
+        <script type="text/javascript" src="./fullpage_option.js"></script>
+    </body>
+</html>
